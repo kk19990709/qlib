@@ -129,7 +129,7 @@ class FileCalendarStorage(FileStorageMixin, CalendarStorage):
 
     @property
     def data(self) -> List[CalVT]:
-        self.check()
+        # self.check()
         # If cache is enabled, then return cache directly
         if self.enable_read_cache:
             key = "orig_file" + str(self.uri)
